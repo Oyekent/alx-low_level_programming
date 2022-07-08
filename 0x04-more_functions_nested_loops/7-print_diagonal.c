@@ -2,7 +2,8 @@
 
 /**
 * print_diagonal - Draws a diagonal line using the \ character.
-* @n: Argument
+*
+*@n: the number of times the character \ should be printed
 */
 void print_diagonal(int n)
 {
@@ -14,9 +15,11 @@ void print_diagonal(int n)
 		{
 			for (space = 0; space <= line; space++)
 				_putchar(' ');
+
 			_putchar('\\');
 
 			if (line == n - 1)
+
 				continue;
 
 			_putchar('\n');
