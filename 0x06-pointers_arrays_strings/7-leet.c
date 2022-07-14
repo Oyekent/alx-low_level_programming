@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * leet - A function that encodes a string into rot13.
+  * leet - A function that encodes a string into 1337.
   *
   * @s: The string to encode.
   *
