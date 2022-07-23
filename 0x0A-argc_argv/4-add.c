@@ -14,24 +14,22 @@
 
 int main(int argc, char *argv[])
 {
-	int x, y, sum = 0;
+	int num, digit, sum = 0;
 
-	if (argc < 1)
-		printf("0\n");
-
-	for (x = 1; x < argc; x++)
+	for (num = 1; num < argc; num++)
 	{
-		for (y = 0; argv[x][y]; y++)
+		for (digit = 0; argv[num][digit]; digit++)
 		{
-			if (!isdigit(argv[x][y]))
+			if (argv[num][digit] < '0' || argv[num][digit] > '9')
 			{
 				printf("Error\n");
-
 				return (1);
 			}
 		}
-		sum += atoi(argv[x]);
+
+		sum += atoi(argv[num]);
 	}
+
 	printf("%d\n", sum);
 
 	return (0);
