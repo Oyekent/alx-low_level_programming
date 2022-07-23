@@ -11,11 +11,9 @@
  * Return: 0.
  */
 
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	char argv;
-
-	printf("%s\n", argv);
+	printf("%d\n", argc);
 
 	return (0);
 }
