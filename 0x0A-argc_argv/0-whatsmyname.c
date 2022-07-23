@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
  * main - A program that prints its name, followed by a new line.
  *
@@ -12,7 +13,7 @@
 
 int main(int argc, char **argv)
 {
-	printf("%s\n", **argv);
+	printf("%d\n", argc - 1);
 
 	return (0);
 }
