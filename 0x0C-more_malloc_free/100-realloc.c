@@ -9,16 +9,17 @@
  *
  * Return: A pointer to the reallocated new size memory, or NULL.
  */
+
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *m
 	unsigned int i, n = new_size;
-	char *oldp = ptr;
+	char *oldm = ptr;
 
 	if (ptr == NULL)
 	{
 		m = malloc(new_size);
-		return (p);
+		return (m);
 	}
 	else if (new_size == 0)
 	{
@@ -30,15 +31,15 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	m = malloc(new_size);
 
-	if (p == NULL)
+	if (m == NULL)
 		return (NULL);
 
 	if (new_size > old_size)
 		n = old_size;
 
 	for (i = 0; i < n; i++)
-		m[i] = oldp[i];
+		m[i] = oldm[i];
 
 	free(ptr);
-	return (p);
+	return (m);
 }
