@@ -1,16 +1,14 @@
 #include <stdio.h>
 
 /**
- * 2-main - A program that prints the name of the file it was compiled from.
+ * main - A program that prints the name of the file it was compiled from.
  *
- * Return 0.
+ * Return: 0.
  *
  */
 
-int main()
+int main(void)
 {
-	char s[];
-
 	printf("%s\n", __FILE__);
 
 	return (0);
