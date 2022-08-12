@@ -1,7 +1,9 @@
 #include "lists.h"
 
-/* myFunction prototype */
-void myFunction(void);
+/**
+ * Apply constructor attribute to myFunction() to execute before main()
+ */
+void __attribute__((constructor)) myFunction(void);
 
 /**
  * myFunction - Prints a string before the main function is executed.
