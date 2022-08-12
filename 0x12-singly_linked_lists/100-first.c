@@ -1,13 +1,10 @@
 #include "lists.h"
 
-/*
- * myFunction
- */
-void myFunction(void);
-
 /**
  * myFunction - Prints a string before the main function is executed.
  */
+void myFunction(void);
+
 void myFunction(void)
 {
 	printf("You're beat! and yet, you must allow,\n"
